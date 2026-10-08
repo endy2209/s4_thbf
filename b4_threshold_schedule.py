@@ -241,8 +241,8 @@ def run_b4_simulation(H_seq, aod_seq, cfg: S3Config, zeta_rf, zeta_em, thbf: THB
     return metrics
 
 def grid_search_b4(val_H_seq, val_aod_seq, cfg: S3Config, thbf: THBFSystem):
-    zeta_rf_candidates = [0.01, 0.03, 0.05, 0.10, 0.15, 0.20]
-    zeta_em_candidates = [0.05, 0.10, 0.15, 0.25, 0.35]
+    zeta_rf_candidates = [0.02, 0.05, 0.1, 0.2,0.3]
+    zeta_em_candidates = [0.02 , 0.05, 0.1,0.2]
     
     best_utility = -float('inf')
     best_zeta_rf = None
